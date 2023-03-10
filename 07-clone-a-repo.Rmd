@@ -1,10 +1,10 @@
 # Cloning a repository
 
 ## Prerequisites
-- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github)
-- [Have a GitHub account](https://hutchdatascience.org/dasl-snack-github)
-- [Create a repository on Github](https://hutchdatascience.org/dasl-snack-github)
-- [Set up a Git Client](https://hutchdatascience.org/dasl-snack-github)
+
+- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github/why-github.html)
+- [Have a GitHub account](https://hutchdatascience.org/dasl-snack-github/create-a-github-account.html)
+- [Create a repository on Github](https://hutchdatascience.org/dasl-snack-github/setting-up-a-project-on-github.html)
 
 ## What is cloning on GitHub?
 

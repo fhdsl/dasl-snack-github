@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github)
+- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github/why-github.html)
 
 ## How to create an account
 

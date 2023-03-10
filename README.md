@@ -1,18 +1,28 @@
-<!--Delete this section below upon using the template-->
+## Motivation
 
-## Github "snacks"
-|Your Objective| Where to go to learn|
+Github is a useful tool, but it can be overwhelming to get started. This is meant to break up the tasks in GitHub into munchable little "snacks" so as to make it less overwhelming.
+
+## Target Audience  
+
+The course is intended for individuals who need to "git" going with GitHub. It is intended to be able to be used in such a way that you can jump to the chapter that covers the task that are you attempting to do as described in the table below.
+
+## Github "snack table"
+
+Each chapter starts with prerequisites. If you are already familiar and have done the task that is mentioned as a prerequisite then you are ready for that chapter. Otherwise, click on the first link to a prerequisite that you haven't fulfilled.
+
+Alternatively you can go through this course from start to finish. But note that there are two different ways (and two different chapters) about how to create a pull request. Pick the one that fits better for you and realize you can always go to the other chapter to try the other method later.
+
+|Your Objective| Which chapter to go to|
 |------------------------------|-----------------------------|
-|Why is git and Github even important or useful?|[Start here](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/making-your-project-open-source-with-github.html) |
-|Creating an account on GitHub| [Start here](https://github.com/join) |
-|How to start a GitHub repository| [Start here](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/making-your-project-open-source-with-github.html#exercise-set-up-a-project-on-github) |
-|How to start a GitHub repository --- video version| [Start here](https://www.youtube.com/watch?v=PPbESwm6xcA) |
-|Sending that GitHub username to SciComp to get added to the Fred Hutch organization| TBD|
-|Install a GUI to help you with git on your computer| [Start here](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html#set-up-a-git-client-gitkraken) |
-|Starting up a GitHub project: Cloning, committing, and pushing| [Start here](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html#start-a-github-repository) |
-|How to make a pull request by pointing and clicking| [Start here](https://www.ottrproject.org/writing_content.html#ottr-entry-level)|
-|How to make a pull request by actually having things on your computer| [Start here](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html#git-clone)|
-|What is code review and why is it important?| [Start here](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/code-review.html)|
-|How to conduct code review on GitHub as an author| [Start here](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-an-author.html)|
-|How to conduct code review on GitHub as a reviewer| [Start here](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-a-reviewer.html)|
-|Collaborating on GitHub| TBD |
+|Why is git and Github even important or useful?|[Start here](https://hutchdatascience.org/dasl-snack-github/why-github.html) |
+|Creating an account on GitHub| [Start here](https://hutchdatascience.org/dasl-snack-github) |
+|How to start a project on a GitHub repository| [Start here](https://hutchdatascience.org/dasl-snack-github/setting-up-a-project-on-github.html) |
+|Getting added to the Fred Hutch GitHub organization| [Start here](https://hutchdatascience.org/dasl-snack-github/getting-added-to-the-hutch-github-organization.html)|
+|Install a GUI to help you with git on your computer| [Start here](https://hutchdatascience.org/dasl-snack-github/setting-up-a-git-client.html) |
+|How to clone a project -- download a project to your computer from GitHub| [Start here](https://hutchdatascience.org/dasl-snack-github/cloning-a-repository.html) |
+|How to make a pull request by pointing and clicking| [Start here](https://hutchdatascience.org/dasl-snack-github/making-a-pull-request-beginners.html)|
+|How to make a pull request by actually having things on your computer| [Start here](https://hutchdatascience.org/dasl-snack-github/making-a-pull-request-advanced.html)|
+|What is code review and why is it important?| [Start here](https://hutchdatascience.org/dasl-snack-github/what-is-code-review.html)|
+|How to conduct code review on GitHub as an author| [Start here](https://hutchdatascience.org/dasl-snack-github/conducting-code-review-as-an-author-on-github.html)|
+|How to conduct code review on GitHub as a reviewer| [Start here](https://hutchdatascience.org/dasl-snack-github/conducting-code-review-as-a-reviewer-on-github.html)|
+|Collaborating on GitHub| [Start here](https://hutchdatascience.org/dasl-snack-github/collaborating-on-github.html) -- this chapter is still being built|
