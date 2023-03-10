@@ -1,0 +1,26 @@
+
+# How to clone a repository
+
+Now you have a repository on GitHub online!
+
+In our daily grind, we will work on this code from our own computer. To set this up, we'll need to `clone` it to our own computer. Cloning is making a remote copy of the project local.
+
+```{r, fig.alt="To clone a repository means to copy a remote repository to your local computer", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6p8ZOzvYs-SGDqa7g4cUHtUld03I/edit#slide=id.g1014c75158f_0_90")
+```
+
+<div class = "github">
+**clone** = To make a remote repository local. In other words, to make an online repository downloaded and linked on your computer.
+</div>
+
+To get started, you will need to clone the GitHub repository you created. We will be using this repository for the duration of this course.
+
+```{r, fig.alt="To clone a GitHub repository, using GitKraken. First, Click Clone a repo. Then, choose where you’d like the repository to be on your computer using the ‘Browse’ button. Then Copy + Paste the url to the project you want to clone where it says ‘URL’. Then click `Clone the repository’.", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6p8ZOzvYs-SGDqa7g4cUHtUld03I/edit#slide=id.g1014c75158f_0_166")
+```
+
+It is simple to clone a GitHub repository using GitKraken. First, sign in to GitKraken; under Repository Management > Clone tab, click `Clone a repo`. Then, choose where you’d like the repository to be on your computer using the `Browse` button. You will need to `Copy + Paste` your new repository's URL (web address) to  where it says `URL`.
+
+Navigate to your repository on GitHub to copy the URL. Copying and pasting is advisable because any little typo will inhibit cloning.
+
+Now you are ready to click `Clone the repository`! It will ask you if you'd like to `Open Now`, click that.

@@ -1,0 +1,41 @@
+# Set up a Git Client
+
+In order to complete this chapter **you will need a GitHub account (it's free)**. If you do not currently have a GitHub account, go to [Github](https://github.com/join) to do that first, then return to this chapter.
+
+## GitKraken
+
+Interaction with git and GitHub can be done completely from the command line, but sometimes this can be harder to keep track of. To help us navigate this, we recommend using a git client. There are a lot of different clients out there, and they are generally free for most situations you will need. In this course, we will take you through how to use [GitKraken](https://www.gitkraken.com/git-client), one such git client.
+
+GitKraken is nice because they have lots of nice tutorials, it works pretty well, and its free for most use cases. But if you find GitKraken doesn't work for you, you can explore [other git clients](https://www.hostinger.com/tutorials/best-git-gui-clients/). For this course, we'll be using GitKraken.
+
+## Install GitKraken
+
+[Go here to install GitKraken](https://support.gitkraken.com/how-to-install/).
+
+Follow their instructions to sign in with your GitHub account. It will ask you to authorize your GitHub account to connect to GitKraken. Click `Authorize`.
+
+You may find it helpful to watch GitKraken's own tutorial (linked below) about how to "git" started, but we will also guide you through each step!
+
+```{r, echo = FALSE}
+knitr::include_url("https://www.youtube.com/embed/ub9GfRziCtU")
+```
+
+GitHub has a host of terms that can feel like a whole language at first, but we'll introduce them one at a time. To start, a lot of the GitHub workflow centers around handling copies of your code that are either stored on the internet (are _remote_) or are stored on your computer (are _local_).
+
+```{r, fig.alt="GitHub has a whole host of terms that can feel like a whole language at first, but we'll introduce them one at a time. To start with, a lot of the GitHub workflow centers around handling copies of your code that are either stored on the internet (are _remote_) or are stored on your computer (are _local_).", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6p8ZOzvYs-SGDqa7g4cUHtUld03I/edit#slide=id.g1014c75158f_0_120")
+```
+<div class = "github">
+**Remote** = GitHub on the internet <br>
+**Local** = What's on your own computer
+</div>
+
+A _repository_, in the case of a data science project, is mostly synonymous with the word "project". Using GitHub, a project will exist both as a remote repository and a local repository (in other words, it will be on the internet on GitHub and on your computer).
+
+```{r, fig.alt="A remote repository is project that is stored on the internet for example, a URL to jhudsl/reproducible-R-example. A local repository is a project copy that lives on your computer. For example, a file path to reproducible-R-example. So using GitHub, a project will exist both as a remote repository and a local repository. (It will be on the internet on GitHub and on your computer). ", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6p8ZOzvYs-SGDqa7g4cUHtUld03I/edit#slide=id.g1014c75158f_0_149")
+```
+
+<div class = "github">
+**Repository** = a set of project files that have a location on GitHub
+</div>

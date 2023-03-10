@@ -47,7 +47,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6
 
 ## Start a GitHub repository
 
-If you don't already have a github repository in mind that you are working from, you can create one using these steps:
+If you don't already have a Github repository in mind that you are working from, you can create one using these steps:
 
 - Go to [Github's main page](https://github.com/) and sign in with your GitHub account.
 - Follow [these instructions to create a repository](https://docs.github.com/en/get-started/quickstart/create-a-repo). As a general, but not absolute rule, you will want to keep one GitHub repository for one analysis project.
