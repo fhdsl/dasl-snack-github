@@ -10,7 +10,7 @@
 
 In our daily grind, its ideal to work on your project from your own computer. To set this up, we'll need to `clone` it to our own computer. Cloning is making a remote copy of the project local.
 
-```{r, fig.alt="To clone a repository means to copy a remote repository to your local computer", out.width = "100%", echo = FALSE}
+```{r, fig.alt="To clone a repository means to copy a remote repository to your local computer", out.width = "100%", echo = FALSE, warning = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6p8ZOzvYs-SGDqa7g4cUHtUld03I/edit#slide=id.g1014c75158f_0_90")
 ```
 
@@ -20,7 +20,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6
 
 To get started, you will need to clone the GitHub repository you created. We will be using this repository for the duration of this course.
 
-```{r, fig.alt="To clone a GitHub repository, using GitKraken. First, Click Clone a repo. Then, choose where you’d like the repository to be on your computer using the ‘Browse’ button. Then Copy + Paste the url to the project you want to clone where it says ‘URL’. Then click `Clone the repository’.", out.width = "100%", echo = FALSE}
+```{r, fig.alt="To clone a GitHub repository, using GitKraken. First, Click Clone a repo. Then, choose where you’d like the repository to be on your computer using the ‘Browse’ button. Then Copy + Paste the url to the project you want to clone where it says ‘URL’. Then click `Clone the repository’.", out.width = "100%", echo = FALSE, warning = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6p8ZOzvYs-SGDqa7g4cUHtUld03I/edit#slide=id.g1014c75158f_0_166")
 ```
 

@@ -39,7 +39,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 
 &nbsp;
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, warning = FALSE}
 devtools::session_info()
 ```
 
