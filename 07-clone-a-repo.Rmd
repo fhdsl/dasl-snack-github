@@ -1,4 +1,4 @@
-# Cloning a repository
+# Getting a repository on to your computer -- cloning
 
 ## Prerequisites
 

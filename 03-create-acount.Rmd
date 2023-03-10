@@ -8,8 +8,7 @@
 
 ## How to create an account
 
-It's free.
-First step is to create an account with GitHub.
+First step is to create an account with GitHub. It's free.
 
 [Go here to do that.](https://github.com/join)
 
