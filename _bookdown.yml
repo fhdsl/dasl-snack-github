@@ -1,6 +1,6 @@
-book_filename: "Course_Name"
+book_filename: "GitHub Snacks"
 chapter_name: "Chapter "
-repo: https://github.com/jhudsl/OTTR_Template/
+repo: https://github.com/fhdasl/dasl-github-snacks/
 rmd_files: ["index.Rmd",
             "01-intro.Rmd",
             "02-why-github.Rmd",
