@@ -1,9 +1,12 @@
 
-# Set up a project on GitHub
+# Setting up a project on GitHub
 
-[Go here for the video tutorial version of this exercise](https://www.youtube.com/watch?v=PPbESwm6xcA).
+## Prerequisites
 
-Now that we understand how useful GitHub is for creating reproducible analyses, it's time to set ourselves up on GitHub.
+- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github)
+- [Have a GitHub account](https://hutchdatascience.org/dasl-snack-github)
+
+## How to start a repository on GitHub
 
 Git and GitHub have a whole rich world of tools and terms that can get complex quickly, but for this exercise, we will not worry about those terms and functionalities just yet, but focus on getting code up on GitHub so we are ready to collaborate and conduct open analyses!
 

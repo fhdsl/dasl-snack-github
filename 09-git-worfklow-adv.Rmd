@@ -1,11 +1,12 @@
 
 # Making a Pull Request -- Advanced
 
-In order to complete this chapter **you will need a GitHub account (it's free)**. If you do not currently have a GitHub account, we recommend you go through our [Intro to Github chapter from the Introduction to Reproducibility course](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/making-your-project-open-source-with-github.html) first, then return to this chapter.
+## Prerequisites
 
-```{r, fig.alt="This chapter has Prerequisites. Before working on this chapter you should: Have a basic understanding of the motivation for using git and GitHub and Have a GitHub account. If you are lacking either of these, you can scan this QR code, or go to bit.ly/github-rationale", out.width = "100%", echo = FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6p8ZOzvYs-SGDqa7g4cUHtUld03I/edit#slide=id.g101867ebdaa_18_0")
-```
+- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github)
+- [Have a GitHub account](https://hutchdatascience.org/dasl-snack-github)
+- [Create a repository on Github](https://hutchdatascience.org/dasl-snack-github)
+- [Set up a Git Client](https://hutchdatascience.org/dasl-snack-github)
 
 ## Set up a Git Client (GitKraken)
 

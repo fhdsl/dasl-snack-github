@@ -1,6 +1,10 @@
-# Set up a Git Client
+# Setting up a Git Client
 
-In order to complete this chapter **you will need a GitHub account (it's free)**. If you do not currently have a GitHub account, go to [Github](https://github.com/join) to do that first, then return to this chapter.
+## Prerequisites
+
+- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github)
+- [Have a GitHub account](https://hutchdatascience.org/dasl-snack-github)
+- [Create a repository on Github](https://hutchdatascience.org/dasl-snack-github)
 
 ## GitKraken
 

@@ -1,5 +1,12 @@
 
-# Create  a GitHub account
+# Create a GitHub account
+
+
+## Prerequisites
+
+- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github)
+
+## How to create an account
 
 It's free.
 First step is to create an account with GitHub.

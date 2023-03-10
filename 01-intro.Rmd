@@ -3,21 +3,27 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Introduction
-
-
 ## Motivation
 
+Github is a useful tool, but it can be overwhelming to get started. This is meant to break up the tasks in GitHub into munchable little "snacks" so as to make it less overwhelming.
 
 ## Target Audience  
 
-The course is intended for ...
+The course is intended for individuals who need to "git" going with GitHub. It is intended to be able to be used in such a way that you can jump to the chapter that covers the task that are you attempting to do as described in the table below.
 
-## Curriculum  
+## Github "snack table"
 
-The course covers...
-
-
-```{r}
-devtools::session_info()
-```
+|Your Objective| Which chapter to go to|
+|------------------------------|-----------------------------|
+|Why is git and Github even important or useful?|[Start here](https://hutchdatascience.org/dasl-snack-github) |
+|Creating an account on GitHub| [Start here](https://hutchdatascience.org/dasl-snack-github) |
+|How to start a GitHub repository| [Start here](https://hutchdatascience.org/dasl-snack-github) |
+|Sending that GitHub username to SciComp to get added to the Fred Hutch organization| [Start here](https://hutchdatascience.org/dasl-snack-github)|
+|Install a GUI to help you with git on your computer| [Start here](https://hutchdatascience.org/dasl-snack-github) |
+|Starting up a GitHub project: Cloning, committing, and pushing| [Start here](https://hutchdatascience.org/dasl-snack-github) |
+|How to make a pull request by pointing and clicking| [Start here](https://hutchdatascience.org/dasl-snack-github)|
+|How to make a pull request by actually having things on your computer| [Start here](https://hutchdatascience.org/dasl-snack-github)|
+|What is code review and why is it important?| [Start here](https://hutchdatascience.org/dasl-snack-github)|
+|How to conduct code review on GitHub as an author| [Start here](https://hutchdatascience.org/dasl-snack-github)|
+|How to conduct code review on GitHub as a reviewer| [Start here](https://hutchdatascience.org/dasl-snack-github)|
+|Collaborating on GitHub| [Start here](https://hutchdatascience.org/dasl-snack-github) |

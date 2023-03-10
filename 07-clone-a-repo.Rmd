@@ -1,9 +1,14 @@
+# Cloning a repository
 
-# How to clone a repository
+## Prerequisites
+- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github)
+- [Have a GitHub account](https://hutchdatascience.org/dasl-snack-github)
+- [Create a repository on Github](https://hutchdatascience.org/dasl-snack-github)
+- [Set up a Git Client](https://hutchdatascience.org/dasl-snack-github)
 
-Now you have a repository on GitHub online!
+## What is cloning on GitHub?
 
-In our daily grind, we will work on this code from our own computer. To set this up, we'll need to `clone` it to our own computer. Cloning is making a remote copy of the project local.
+In our daily grind, its ideal to work on your project from your own computer. To set this up, we'll need to `clone` it to our own computer. Cloning is making a remote copy of the project local.
 
 ```{r, fig.alt="To clone a repository means to copy a remote repository to your local computer", out.width = "100%", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6p8ZOzvYs-SGDqa7g4cUHtUld03I/edit#slide=id.g1014c75158f_0_90")

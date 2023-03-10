@@ -2,8 +2,15 @@
 
 # Making a Pull Request -- Beginners
 
-If you have repository on GitHub and you're ready to start
-adding and editing your files!
+## Prerequisites
+
+- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github)
+- [Have a GitHub account](https://hutchdatascience.org/dasl-snack-github)
+- [Create a repository on Github](https://hutchdatascience.org/dasl-snack-github)
+
+## What's a Pull Request?
+
+If you have repository on GitHub and you're ready to start adding and editing your files!
 
 The GitHub workflow of editing and adding files in your repository is called **pull requests**! Pull requests are a way to set up **proposed changes** (instead of direct changes) before you publish them. Pull requests for you to check and discuss your proposed changes. Importantly, pull requests also allow you to discuss proposed changes with others!
 

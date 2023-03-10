@@ -1,12 +1,12 @@
 ---
-title: "FHDaSL Book Name"
+title: "FHDaSL GitHub Snacks"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
 biblio-style: apalike
 link-citations: yes
-description: Description about Course/Book.
+description: This book walks through the various levels and tasks of interacting with GitHub. 
 favicon: assets/favicon.ico
 ---
 
