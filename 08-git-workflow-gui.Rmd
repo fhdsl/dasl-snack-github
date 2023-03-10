@@ -84,9 +84,7 @@ great information about how to create and remove files. Additionally
 GitHub is always making changes, so if our instruction seem out of date,
 definitely checkout what GitHub's current documentation:
 
--   [Follow GitHub's instructions about managing files through their
-    website
-    here](https://docs.github.com/en/repositories/working-with-files/managing-files).
+-   [Follow GitHub's instructions about managing files through their website here](https://docs.github.com/en/repositories/working-with-files/managing-files)
 
 After every edit you make, scroll down and make sure that you choose
 `Commit directly to the new-changes branch.`. This will add your changes
