@@ -182,8 +182,5 @@ steps.
 -   [Using version control with GitHub](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
 -   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
 -   [GitHub for data scientists](https://towardsdatascience.com/introduction-to-github-for-data-scientists-2cf8b9b25fba)
--   [Intro to GitHub](https://lab.github.com/githubtraining/introduction-to-github)
--   [First Day on GitHub](https://lab.github.com/githubtraining/first-day-on-github)
--   [First Week on GitHub](https://lab.github.com/githubtraining/first-week-on-github)
 -   [GitHub docs about creating a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 -   [Making a Pull Request](https://www.atlassian.com/git/tutorials/making-a-pull-request)
