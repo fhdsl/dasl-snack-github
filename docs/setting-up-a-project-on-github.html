@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Setting up a project on GitHub | FHDaSL GitHub Snacks</title>
+  <meta name="description" content="This book walks through the various levels and tasks of interacting with GitHub." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Setting up a project on GitHub | FHDaSL GitHub Snacks" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book walks through the various levels and tasks of interacting with GitHub." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Setting up a project on GitHub | FHDaSL GitHub Snacks" />
+  
+  <meta name="twitter:description" content="This book walks through the various levels and tasks of interacting with GitHub." />
+  
+
+
+
+<meta name="date" content="2023-03-10" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="create-a-github-account.html"/>
+<link rel="next" href="getting-added-to-the-hutch-github-organization.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Book</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#motivation"><i class="fa fa-check"></i><b>0.1</b> Motivation</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#target-audience"><i class="fa fa-check"></i><b>0.2</b> Target Audience</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#github-snack-table"><i class="fa fa-check"></i><b>0.3</b> Github “snack table”</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="why-github.html"><a href="why-github.html"><i class="fa fa-check"></i><b>1</b> Why GitHub</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="why-github.html"><a href="why-github.html#github-and-git-allow-you-to"><i class="fa fa-check"></i><b>1.0.1</b> GitHub and git allow you to…</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="create-a-github-account.html"><a href="create-a-github-account.html"><i class="fa fa-check"></i><b>2</b> Create a GitHub account</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="create-a-github-account.html"><a href="create-a-github-account.html#prerequisites"><i class="fa fa-check"></i><b>2.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2.2" data-path="create-a-github-account.html"><a href="create-a-github-account.html#how-to-create-an-account"><i class="fa fa-check"></i><b>2.2</b> How to create an account</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html"><i class="fa fa-check"></i><b>3</b> Setting up a project on GitHub</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#prerequisites-1"><i class="fa fa-check"></i><b>3.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="3.2" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#how-to-start-a-repository-on-github"><i class="fa fa-check"></i><b>3.2</b> How to start a repository on GitHub</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#readmes"><i class="fa fa-check"></i><b>3.2.1</b> READMEs!</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="getting-added-to-the-hutch-github-organization.html"><a href="getting-added-to-the-hutch-github-organization.html"><i class="fa fa-check"></i><b>4</b> Getting added to the Hutch GitHub organization</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="getting-added-to-the-hutch-github-organization.html"><a href="getting-added-to-the-hutch-github-organization.html#prerequisites-2"><i class="fa fa-check"></i><b>4.1</b> Prerequisites</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="how-to-get-added-to-the-fredhutch-github-organization.html"><a href="how-to-get-added-to-the-fredhutch-github-organization.html"><i class="fa fa-check"></i><b>5</b> How to get added to the <span>fredhutch github organization</span></a></li>
+<li class="chapter" data-level="6" data-path="setting-up-a-git-client.html"><a href="setting-up-a-git-client.html"><i class="fa fa-check"></i><b>6</b> Setting up a Git Client</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="setting-up-a-git-client.html"><a href="setting-up-a-git-client.html#prerequisites-3"><i class="fa fa-check"></i><b>6.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="6.2" data-path="setting-up-a-git-client.html"><a href="setting-up-a-git-client.html#gitkraken"><i class="fa fa-check"></i><b>6.2</b> GitKraken</a></li>
+<li class="chapter" data-level="6.3" data-path="setting-up-a-git-client.html"><a href="setting-up-a-git-client.html#install-gitkraken"><i class="fa fa-check"></i><b>6.3</b> Install GitKraken</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="getting-a-repository-on-to-your-computer-cloning.html"><a href="getting-a-repository-on-to-your-computer-cloning.html"><i class="fa fa-check"></i><b>7</b> Getting a repository on to your computer – cloning</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="getting-a-repository-on-to-your-computer-cloning.html"><a href="getting-a-repository-on-to-your-computer-cloning.html#prerequisites-4"><i class="fa fa-check"></i><b>7.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="7.2" data-path="getting-a-repository-on-to-your-computer-cloning.html"><a href="getting-a-repository-on-to-your-computer-cloning.html#what-is-cloning-on-github"><i class="fa fa-check"></i><b>7.2</b> What is cloning on GitHub?</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html"><i class="fa fa-check"></i><b>8</b> Making a Pull Request – Beginners</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#prerequisites-5"><i class="fa fa-check"></i><b>8.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="8.2" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#whats-a-pull-request"><i class="fa fa-check"></i><b>8.2</b> What’s a Pull Request?</a></li>
+<li class="chapter" data-level="8.3" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#create-a-new-branch"><i class="fa fa-check"></i><b>8.3</b> Create a new branch</a></li>
+<li class="chapter" data-level="8.4" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#committing-changes"><i class="fa fa-check"></i><b>8.4</b> Committing changes</a></li>
+<li class="chapter" data-level="8.5" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#open-a-pull-request"><i class="fa fa-check"></i><b>8.5</b> Open a pull request</a></li>
+<li class="chapter" data-level="8.6" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#more-resources-for-learning-github"><i class="fa fa-check"></i><b>8.6</b> More resources for learning GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html"><i class="fa fa-check"></i><b>9</b> Making a Pull Request – Advanced</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#prerequisites-6"><i class="fa fa-check"></i><b>9.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="9.2" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#set-up-a-git-client-gitkraken"><i class="fa fa-check"></i><b>9.2</b> Set up a Git Client (GitKraken)</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#install-gitkraken-1"><i class="fa fa-check"></i><b>9.2.1</b> Install GitKraken</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#start-a-github-repository"><i class="fa fa-check"></i><b>9.3</b> Start a GitHub repository</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#git-clone"><i class="fa fa-check"></i><b>9.3.1</b> git clone</a></li>
+<li class="chapter" data-level="9.3.2" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#create-a-branch"><i class="fa fa-check"></i><b>9.3.2</b> Create a branch</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#more-resources-for-learning-github-1"><i class="fa fa-check"></i><b>9.4</b> More resources for learning GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="collaborating-on-github.html"><a href="collaborating-on-github.html"><i class="fa fa-check"></i><b>10</b> Collaborating on GitHub</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="collaborating-on-github.html"><a href="collaborating-on-github.html#prerequisites-7"><i class="fa fa-check"></i><b>10.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="10.2" data-path="collaborating-on-github.html"><a href="collaborating-on-github.html#tips-for-collaborating-through-github"><i class="fa fa-check"></i><b>10.2</b> Tips for collaborating through GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="what-is-code-review.html"><a href="what-is-code-review.html"><i class="fa fa-check"></i><b>11</b> What is code review?</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="what-is-code-review.html"><a href="what-is-code-review.html#exercise-set-up-your-code-review-request"><i class="fa fa-check"></i><b>11.1</b> Exercise: Set up your code review request!</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html"><i class="fa fa-check"></i><b>12</b> Conducting code review as an author on GitHub</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#prerequisites-8"><i class="fa fa-check"></i><b>12.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="12.2" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#learning-objectives"><i class="fa fa-check"></i><b>12.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="12.3" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#author-responsibilities-in-code-review"><i class="fa fa-check"></i><b>12.3</b> Author responsibilities in code review</a></li>
+<li class="chapter" data-level="12.4" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#characteristics-of-great-pull-requests"><i class="fa fa-check"></i><b>12.4</b> Characteristics of great pull requests</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#theres-plenty-of-context"><i class="fa fa-check"></i><b>12.4.1</b> There’s plenty of context!</a></li>
+<li class="chapter" data-level="12.4.2" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#includes-an-explicit-request-for-what-kind-of-feedback-is-needed"><i class="fa fa-check"></i><b>12.4.2</b> Includes an explicit request for what kind of feedback is needed</a></li>
+<li class="chapter" data-level="12.4.3" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#points-out-questionable-areas-that-need-extra-attention"><i class="fa fa-check"></i><b>12.4.3</b> Points out questionable areas that need extra attention</a></li>
+<li class="chapter" data-level="12.4.4" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#are-relatively-small-and-focused"><i class="fa fa-check"></i><b>12.4.4</b> Are relatively small and focused</a></li>
+<li class="chapter" data-level="12.4.5" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#dont-ask-a-reviewer-to-dig-through-dirty-code"><i class="fa fa-check"></i><b>12.4.5</b> Don’t ask a reviewer to dig through dirty code</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#exercise-create-your-pull-request-description"><i class="fa fa-check"></i><b>12.5</b> Exercise: Create your pull request description</a>
+<ul>
+<li class="chapter" data-level="12.5.1" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#preparing-for-the-return-of-your-review"><i class="fa fa-check"></i><b>12.5.1</b> Preparing for the return of your review</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html"><i class="fa fa-check"></i><b>13</b> Conducting code review as a reviewer on GitHub</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#prerequisites-9"><i class="fa fa-check"></i><b>13.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="13.2" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#learning-objectives-1"><i class="fa fa-check"></i><b>13.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="13.3" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#reviewer-responsibilities-in-code-review"><i class="fa fa-check"></i><b>13.3</b> Reviewer responsibilities in code review</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#what-to-look-for"><i class="fa fa-check"></i><b>13.3.1</b> What to look for!</a></li>
+<li class="chapter" data-level="13.3.2" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#how-to-communicate-it"><i class="fa fa-check"></i><b>13.3.2</b> How to communicate it</a></li>
+<li class="chapter" data-level="13.3.3" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#exercise-review-past-yous-code"><i class="fa fa-check"></i><b>13.3.3</b> Exercise: Review Past you’s code</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="14" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>14</b> References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/W6Mg4rzuMK6Yk3Am8"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">FHDaSL GitHub Snacks</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/dasl_thin_main_image.png">
+</div>
+<div id="setting-up-a-project-on-github" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Setting up a project on GitHub</h1>
+<div id="prerequisites-1" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Prerequisites</h2>
+<ul>
+<li><a href="https://hutchdatascience.org/dasl-snack-github/why-github.html">Have an understanding of why Github is useful</a></li>
+<li><a href="https://hutchdatascience.org/dasl-snack-github/create-a-github-account.html">Have a GitHub account</a></li>
+</ul>
+</div>
+<div id="how-to-start-a-repository-on-github" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> How to start a repository on GitHub</h2>
+<p>Git and GitHub have a whole rich world of tools and terms that can get complex quickly, but for this exercise, we will not worry about those terms and functionalities just yet, but focus on getting code up on GitHub so we are ready to collaborate and conduct open analyses!</p>
+<ul>
+<li>Go to <a href="https://github.com/" target="_blank">Github’s main page</a> and click Sign Up if you don’t have an account.</li>
+<li>Follow <a href="https://docs.github.com/en/get-started/quickstart/create-a-repo" target="_blank">these instructions to create a repository</a>. As a general, but not absolute rule, you will want to keep one GitHub repository for one analysis project.
+<ul>
+<li>Name the repository something that reminds you what its related to.</li>
+<li>Choose <code>Public</code>.</li>
+<li>Check the box that says <code>Add a README</code>. For more about what a README is and what it should have, see the below section.</li>
+</ul></li>
+<li>Follow <a href="https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-on-github" target="_blank">these instructions</a> to add the example files you downloaded to your new repository.</li>
+</ul>
+<p>Congrats! You’ve started your very own project on GitHub!
+We encourage you to do the same with your own code and other projects!</p>
+<p><strong>Any feedback you have regarding this exercise is greatly appreciated; you can fill out <a href="https://forms.gle/ygSSwoGaEATA2S65A">this form</a>!</strong></p>
+<div id="readmes" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> READMEs!</h3>
+<p>READMEs are also a great way to help your collaborators get quickly acquainted with the project.</p>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_unnamed&#39; by
+## &#39;rlang::check_dots_unnamed&#39; when loading &#39;tibble&#39;</code></pre>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_used&#39; by
+## &#39;rlang::check_dots_used&#39; when loading &#39;tibble&#39;</code></pre>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_empty&#39; by
+## &#39;rlang::check_dots_empty&#39; when loading &#39;tibble&#39;</code></pre>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_unnamed&#39; by
+## &#39;rlang::check_dots_unnamed&#39; when loading &#39;pillar&#39;</code></pre>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_used&#39; by
+## &#39;rlang::check_dots_used&#39; when loading &#39;pillar&#39;</code></pre>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_empty&#39; by
+## &#39;rlang::check_dots_empty&#39; when loading &#39;pillar&#39;</code></pre>
+<p><img src="04-start-repo_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gf8379bb805_0_11.png" title="Avi is looking at a set of project files that include a file called a ‘README.md’. Avi says 'I had no idea where to start with this analysis that Ruby sent me to review, but then I saw she included a README and that saved me so much time and effort in getting started!'" alt="Avi is looking at a set of project files that include a file called a ‘README.md’. Avi says 'I had no idea where to start with this analysis that Ruby sent me to review, but then I saw she included a README and that saved me so much time and effort in getting started!'" width="1250" style="display: block; margin: auto;" /></p>
+<p>READMEs stick out in a project and are generally universal signal for new people to the project to start by READing them. GitHub automatically will preview your file called “README.md” when someone comes to the main page of your repository which further encourages people looking at your project to read the information in your README.</p>
+<p><strong>Information that should be included in a README:</strong></p>
+<ol style="list-style-type: decimal">
+<li>General purpose of the project</li>
+<li>Instructions on how to re-run the project</li>
+<li>Lists of any software required by the project</li>
+<li>Input and output file descriptions.</li>
+<li>Descriptions of any additional tools included in the project?</li>
+</ol>
+<p>You can take a look at this <a href="https://raw.githubusercontent.com/jhudsl/Reproducibility_in_Cancer_Informatics/main/resources/README-template.md">template README</a> to get your started.</p>
+<div id="more-about-writing-readmes" class="section level4" number="3.2.1.1">
+<h4><span class="header-section-number">3.2.1.1</span> More about writing READMEs:</h4>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/">How to write a good README file</a></li>
+<li><a href="https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3">A Beginners Guide to writing a Kicka** README</a></li>
+<li><a href="https://towardsdatascience.com/how-to-write-an-awesome-readme-68bf4be91f8b">How to write an awesome README</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+      <a href="https://hutchdatascience.org/" target="_blank"><img src="https://hutchdatascience.org/images/crazy-idea-wide.png" style="width: 80%; padding-left: 15px; padding-top: 8px;"</a>
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="create-a-github-account.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="getting-added-to-the-hutch-github-organization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

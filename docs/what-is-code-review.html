@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 11 What is code review? | FHDaSL GitHub Snacks</title>
+  <meta name="description" content="This book walks through the various levels and tasks of interacting with GitHub." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 11 What is code review? | FHDaSL GitHub Snacks" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book walks through the various levels and tasks of interacting with GitHub." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 11 What is code review? | FHDaSL GitHub Snacks" />
+  
+  <meta name="twitter:description" content="This book walks through the various levels and tasks of interacting with GitHub." />
+  
+
+
+
+<meta name="date" content="2023-03-10" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="collaborating-on-github.html"/>
+<link rel="next" href="conducting-code-review-as-an-author-on-github.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Book</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#motivation"><i class="fa fa-check"></i><b>0.1</b> Motivation</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#target-audience"><i class="fa fa-check"></i><b>0.2</b> Target Audience</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#github-snack-table"><i class="fa fa-check"></i><b>0.3</b> Github “snack table”</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="why-github.html"><a href="why-github.html"><i class="fa fa-check"></i><b>1</b> Why GitHub</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="why-github.html"><a href="why-github.html#github-and-git-allow-you-to"><i class="fa fa-check"></i><b>1.0.1</b> GitHub and git allow you to…</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="create-a-github-account.html"><a href="create-a-github-account.html"><i class="fa fa-check"></i><b>2</b> Create a GitHub account</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="create-a-github-account.html"><a href="create-a-github-account.html#prerequisites"><i class="fa fa-check"></i><b>2.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2.2" data-path="create-a-github-account.html"><a href="create-a-github-account.html#how-to-create-an-account"><i class="fa fa-check"></i><b>2.2</b> How to create an account</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html"><i class="fa fa-check"></i><b>3</b> Setting up a project on GitHub</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#prerequisites-1"><i class="fa fa-check"></i><b>3.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="3.2" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#how-to-start-a-repository-on-github"><i class="fa fa-check"></i><b>3.2</b> How to start a repository on GitHub</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#readmes"><i class="fa fa-check"></i><b>3.2.1</b> READMEs!</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="getting-added-to-the-hutch-github-organization.html"><a href="getting-added-to-the-hutch-github-organization.html"><i class="fa fa-check"></i><b>4</b> Getting added to the Hutch GitHub organization</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="getting-added-to-the-hutch-github-organization.html"><a href="getting-added-to-the-hutch-github-organization.html#prerequisites-2"><i class="fa fa-check"></i><b>4.1</b> Prerequisites</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="how-to-get-added-to-the-fredhutch-github-organization.html"><a href="how-to-get-added-to-the-fredhutch-github-organization.html"><i class="fa fa-check"></i><b>5</b> How to get added to the <span>fredhutch github organization</span></a></li>
+<li class="chapter" data-level="6" data-path="setting-up-a-git-client.html"><a href="setting-up-a-git-client.html"><i class="fa fa-check"></i><b>6</b> Setting up a Git Client</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="setting-up-a-git-client.html"><a href="setting-up-a-git-client.html#prerequisites-3"><i class="fa fa-check"></i><b>6.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="6.2" data-path="setting-up-a-git-client.html"><a href="setting-up-a-git-client.html#gitkraken"><i class="fa fa-check"></i><b>6.2</b> GitKraken</a></li>
+<li class="chapter" data-level="6.3" data-path="setting-up-a-git-client.html"><a href="setting-up-a-git-client.html#install-gitkraken"><i class="fa fa-check"></i><b>6.3</b> Install GitKraken</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="getting-a-repository-on-to-your-computer-cloning.html"><a href="getting-a-repository-on-to-your-computer-cloning.html"><i class="fa fa-check"></i><b>7</b> Getting a repository on to your computer – cloning</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="getting-a-repository-on-to-your-computer-cloning.html"><a href="getting-a-repository-on-to-your-computer-cloning.html#prerequisites-4"><i class="fa fa-check"></i><b>7.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="7.2" data-path="getting-a-repository-on-to-your-computer-cloning.html"><a href="getting-a-repository-on-to-your-computer-cloning.html#what-is-cloning-on-github"><i class="fa fa-check"></i><b>7.2</b> What is cloning on GitHub?</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html"><i class="fa fa-check"></i><b>8</b> Making a Pull Request – Beginners</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#prerequisites-5"><i class="fa fa-check"></i><b>8.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="8.2" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#whats-a-pull-request"><i class="fa fa-check"></i><b>8.2</b> What’s a Pull Request?</a></li>
+<li class="chapter" data-level="8.3" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#create-a-new-branch"><i class="fa fa-check"></i><b>8.3</b> Create a new branch</a></li>
+<li class="chapter" data-level="8.4" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#committing-changes"><i class="fa fa-check"></i><b>8.4</b> Committing changes</a></li>
+<li class="chapter" data-level="8.5" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#open-a-pull-request"><i class="fa fa-check"></i><b>8.5</b> Open a pull request</a></li>
+<li class="chapter" data-level="8.6" data-path="making-a-pull-request-beginners.html"><a href="making-a-pull-request-beginners.html#more-resources-for-learning-github"><i class="fa fa-check"></i><b>8.6</b> More resources for learning GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html"><i class="fa fa-check"></i><b>9</b> Making a Pull Request – Advanced</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#prerequisites-6"><i class="fa fa-check"></i><b>9.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="9.2" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#set-up-a-git-client-gitkraken"><i class="fa fa-check"></i><b>9.2</b> Set up a Git Client (GitKraken)</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#install-gitkraken-1"><i class="fa fa-check"></i><b>9.2.1</b> Install GitKraken</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#start-a-github-repository"><i class="fa fa-check"></i><b>9.3</b> Start a GitHub repository</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#git-clone"><i class="fa fa-check"></i><b>9.3.1</b> git clone</a></li>
+<li class="chapter" data-level="9.3.2" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#create-a-branch"><i class="fa fa-check"></i><b>9.3.2</b> Create a branch</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="making-a-pull-request-advanced.html"><a href="making-a-pull-request-advanced.html#more-resources-for-learning-github-1"><i class="fa fa-check"></i><b>9.4</b> More resources for learning GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="collaborating-on-github.html"><a href="collaborating-on-github.html"><i class="fa fa-check"></i><b>10</b> Collaborating on GitHub</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="collaborating-on-github.html"><a href="collaborating-on-github.html#prerequisites-7"><i class="fa fa-check"></i><b>10.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="10.2" data-path="collaborating-on-github.html"><a href="collaborating-on-github.html#tips-for-collaborating-through-github"><i class="fa fa-check"></i><b>10.2</b> Tips for collaborating through GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="what-is-code-review.html"><a href="what-is-code-review.html"><i class="fa fa-check"></i><b>11</b> What is code review?</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="what-is-code-review.html"><a href="what-is-code-review.html#exercise-set-up-your-code-review-request"><i class="fa fa-check"></i><b>11.1</b> Exercise: Set up your code review request!</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html"><i class="fa fa-check"></i><b>12</b> Conducting code review as an author on GitHub</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#prerequisites-8"><i class="fa fa-check"></i><b>12.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="12.2" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#learning-objectives"><i class="fa fa-check"></i><b>12.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="12.3" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#author-responsibilities-in-code-review"><i class="fa fa-check"></i><b>12.3</b> Author responsibilities in code review</a></li>
+<li class="chapter" data-level="12.4" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#characteristics-of-great-pull-requests"><i class="fa fa-check"></i><b>12.4</b> Characteristics of great pull requests</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#theres-plenty-of-context"><i class="fa fa-check"></i><b>12.4.1</b> There’s plenty of context!</a></li>
+<li class="chapter" data-level="12.4.2" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#includes-an-explicit-request-for-what-kind-of-feedback-is-needed"><i class="fa fa-check"></i><b>12.4.2</b> Includes an explicit request for what kind of feedback is needed</a></li>
+<li class="chapter" data-level="12.4.3" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#points-out-questionable-areas-that-need-extra-attention"><i class="fa fa-check"></i><b>12.4.3</b> Points out questionable areas that need extra attention</a></li>
+<li class="chapter" data-level="12.4.4" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#are-relatively-small-and-focused"><i class="fa fa-check"></i><b>12.4.4</b> Are relatively small and focused</a></li>
+<li class="chapter" data-level="12.4.5" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#dont-ask-a-reviewer-to-dig-through-dirty-code"><i class="fa fa-check"></i><b>12.4.5</b> Don’t ask a reviewer to dig through dirty code</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#exercise-create-your-pull-request-description"><i class="fa fa-check"></i><b>12.5</b> Exercise: Create your pull request description</a>
+<ul>
+<li class="chapter" data-level="12.5.1" data-path="conducting-code-review-as-an-author-on-github.html"><a href="conducting-code-review-as-an-author-on-github.html#preparing-for-the-return-of-your-review"><i class="fa fa-check"></i><b>12.5.1</b> Preparing for the return of your review</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html"><i class="fa fa-check"></i><b>13</b> Conducting code review as a reviewer on GitHub</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#prerequisites-9"><i class="fa fa-check"></i><b>13.1</b> Prerequisites</a></li>
+<li class="chapter" data-level="13.2" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#learning-objectives-1"><i class="fa fa-check"></i><b>13.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="13.3" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#reviewer-responsibilities-in-code-review"><i class="fa fa-check"></i><b>13.3</b> Reviewer responsibilities in code review</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#what-to-look-for"><i class="fa fa-check"></i><b>13.3.1</b> What to look for!</a></li>
+<li class="chapter" data-level="13.3.2" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#how-to-communicate-it"><i class="fa fa-check"></i><b>13.3.2</b> How to communicate it</a></li>
+<li class="chapter" data-level="13.3.3" data-path="conducting-code-review-as-a-reviewer-on-github.html"><a href="conducting-code-review-as-a-reviewer-on-github.html#exercise-review-past-yous-code"><i class="fa fa-check"></i><b>13.3.3</b> Exercise: Review Past you’s code</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="14" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>14</b> References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/W6Mg4rzuMK6Yk3Am8"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">FHDaSL GitHub Snacks</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/dasl_thin_main_image.png">
+</div>
+<div id="what-is-code-review" class="section level1" number="11">
+<h1><span class="header-section-number">Chapter 11</span> What is code review?</h1>
+<p>The only way to know if your analysis is truly reproducible is to send it to someone else to reproduce! That sentiment is at the heart of code review. Although most wouldn’t dare send out a manuscript for publishing without having our collaborators giving it a line-by-line review, people don’t always feel the same way about code.</p>
+<p><span class="citation">Parker (<a href="references.html#ref-Parker2017" role="doc-biblioref">2017</a>)</span> describes code review:</p>
+<blockquote>
+<p>Code review will not guarantee an accurate analysis, but it’s one of the most reliable ways of establishing one that is more accurate than before.</p>
+</blockquote>
+<p>Not only does code review help boost the accuracy and reproducibility of the analysis, it also helps everyone involved in the process learn something new!</p>
+<div id="recommended-reading-about-code-review" class="section level4" number="11.0.0.1">
+<h4><span class="header-section-number">11.0.0.1</span> Recommended reading about code review</h4>
+<ul>
+<li><a href="https://phauer.com/2018/code-review-guidelines/">Code Review Guidelines for Humans</a> by <span class="citation">Hauer (<a href="references.html#ref-Hauer2018" role="doc-biblioref">2018</a>)</span>.</li>
+<li><a href="https://quickbirdstudios.com/blog/code-review-best-practices-guidelines/">Your Code Sucks! – Code Review Best Practices</a> by <span class="citation">Hildebr (<a href="references.html#ref-Hildebr2020" role="doc-biblioref">2020</a>)</span>.</li>
+<li><a href="https://smartbear.com/en/learn/code-review/best-practices-for-peer-code-review/">Best practices for Code Review</a> by <span class="citation">Smartbear Team (<a href="references.html#ref-Smartbear2021" role="doc-biblioref">2021</a>)</span>.</li>
+<li><a href="https://www.atlassian.com/agile/software-development/code-reviews">Why code reviews matter (and actually save time!)</a> by <span class="citation">Radigan (<a href="references.html#ref-Radigan2021" role="doc-biblioref">2021</a>)</span>.</li>
+</ul>
+</div>
+<div id="exercise-set-up-your-code-review-request" class="section level2" number="11.1">
+<h2><span class="header-section-number">11.1</span> Exercise: Set up your code review request!</h2>
+<p>Since reproducibility is all about someone else being able to run your code and obtain your results, the exercise in this course involves preparing to do just that!</p>
+<p><strong>The goal:</strong></p>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_unnamed&#39; by
+## &#39;rlang::check_dots_unnamed&#39; when loading &#39;tibble&#39;</code></pre>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_used&#39; by
+## &#39;rlang::check_dots_used&#39; when loading &#39;tibble&#39;</code></pre>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_empty&#39; by
+## &#39;rlang::check_dots_empty&#39; when loading &#39;tibble&#39;</code></pre>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_unnamed&#39; by
+## &#39;rlang::check_dots_unnamed&#39; when loading &#39;pillar&#39;</code></pre>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_used&#39; by
+## &#39;rlang::check_dots_used&#39; when loading &#39;pillar&#39;</code></pre>
+<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_empty&#39; by
+## &#39;rlang::check_dots_empty&#39; when loading &#39;pillar&#39;</code></pre>
+<p><img src="11-whats-code-review_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_g1006ff8e7e9_48_33.png" title="Ruby the researcher and Avi the associate are so happy because Avi was able to reproduce Ruby’s results on his computer." alt="Ruby the researcher and Avi the associate are so happy because Avi was able to reproduce Ruby’s results on his computer." width="1250" style="display: block; margin: auto;" />
+In the second part of this reproducibility course we will discuss how to conduct formal line-by-line code reviews, but for now, we will discuss how to prep your analysis for someone else look at your code and attempt to run it.</p>
+<p>At this point, you should have a GitHub repository that contains the following:</p>
+<ul>
+<li>A <code>make_heatmap</code> notebook</li>
+<li>A README</li>
+<li>A data folder containing the metadata and gene expression matrix files in a folder named <code>SRP070849</code>:
+<ul>
+<li><code>SRP070849/metadata_SRP070849.tsv</code></li>
+<li><code>SRP070849/SRP070849.tsv</code></li>
+</ul></li>
+</ul>
+<p><strong>1) Refresh and delete output</strong><br />
+Before you send off your code to someone else, delete your output (the <code>results</code> and <code>plots</code> folders) and attempt to re-run it yourself. This also involves restarting your R session/Python kernel and running all the chunks again.</p>
+<p><strong>2) Re-run the whole analysis</strong></p>
+<p><strong>3) Interrogate and troubleshoot</strong>
+If your code has any issues running, try your best to troubleshoot the problems. Read this handy guide for <a href="https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/00b-debugging_resources.md">tips on troubleshooting R</a>.</p>
+<p><strong>4) Rinse and repeat</strong><br />
+Repeat this as many times as needed until you reliably are able to re-run this code and get the same results without any <a href="https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels">code smells</a> popping up. Dig into bad code smells or bad results smells wherever you sense them. If you aren’t sure why you feel this way about your code or results, hold on to this and it may be something your collaborator will be able to see something you don’t.</p>
+<p><strong>5) Let it simmer</strong><br />
+Leave your analysis for a bit. Do you think it’s perfect? Are you at your wits end with it? No matter how you feel about it, let it sit for a half a day or so then return to it with fresh eyes <span class="citation">(<a href="references.html#ref-Savonen2021b" role="doc-biblioref">Savonen 2021</a>)</span>.</p>
+<p><strong>5) Re-review your documentation and code with fresh eyes</strong><br />
+Now with fresh eyes and doing your best to imagine you don’t have the knowledge you have – does your analysis and results make sense?</p>
+<p><strong>6) Are you sure it’s ready?</strong><br />
+Ask yourself if you’ve polished this code and documentation as far as you can reasonably take it? Realizing that determining what qualifies <code>as far as you can reasonably take it</code> is also a skill you will build with time. Code review is the most efficient use of everyone’s time when your code and documentation have reached this point.</p>
+<p><strong>8) Draft your request</strong>
+Now you are ready to send this code to your collaborator, but first try to send them a specific set of instructions and questions about what you would like them to review, in your message to them include this information (You may want to draft this out in a scratch file):</p>
+<p><em>Code review requests should include:</em></p>
+<ul>
+<li>A link to your repository that has your README to get them quickly oriented to the project.<br />
+</li>
+<li>A request for what kind of feedback you are looking for.
+<ul>
+<li>Big picture? Technical? Method selection?<br />
+</li>
+<li>Are there specific areas of the code you are having trouble with or are unsure about? Send a link to the <a href="https://stackoverflow.com/questions/23821235/how-to-link-to-specific-line-number-on-github">specific lines in GitHub</a> you are asking about.<br />
+</li>
+<li>Are there results that are surprising, confusing, or <a href="https://github.com/jennybc/code-smells-and-feels#code-smells-and-feels">smell wrong</a>?<br />
+</li>
+<li>Be sure to detail what you have dug into and tried at this point for any problematic points.<br />
+</li>
+<li>Explicitly ask them what commands or tests you’d like them to test run.<br />
+</li>
+</ul></li>
+<li>Lastly, thank them for helping review your code!</li>
+</ul>
+<p><strong>9) Ready for review</strong><br />
+Now you are ready to send your crafted message to your collaborator for review. But, for the purposes of this exercise, you may <strong>not</strong> want to ask your collaborator to spend their time carefully review this practice repository, but now that you understand and have done the steps involved <em>you are prepared to do this for your own analyses</em>!</p>
+<p>TL;DR for asking for a code review:<br />
+<img src="11-whats-code-review_files/figure-html/1LMurysUhCjZb7DVF6KS9QmJ5NBjwWVjRn40MS9f2noE_gfc9e5f916a_0_52.png" title="This chapter will demonstrate how to: How code review is the best way to enhance the reproducibility of your analyses over time. Engage in basic code review for your analysis." alt="This chapter will demonstrate how to: How code review is the best way to enhance the reproducibility of your analyses over time. Engage in basic code review for your analysis." width="1250" style="display: block; margin: auto;" /></p>
+<p><strong>Any feedback you have regarding this exercise is greatly appreciated; you can fill out <a href="https://forms.gle/ygSSwoGaEATA2S65A">this form</a>!</strong></p>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+      <a href="https://hutchdatascience.org/" target="_blank"><img src="https://hutchdatascience.org/images/crazy-idea-wide.png" style="width: 80%; padding-left: 15px; padding-top: 8px;"</a>
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="collaborating-on-github.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conducting-code-review-as-an-author-on-github.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
