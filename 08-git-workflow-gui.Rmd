@@ -1,14 +1,20 @@
 
 
+# Making a Pull Request -- Beginners
+
+If you have repository on GitHub and you're ready to start
+adding and editing your files!
+
+The GitHub workflow of editing and adding files in your repository is called **pull requests**! Pull requests are a way to set up **proposed changes** (instead of direct changes) before you publish them. Pull requests for you to check and discuss your proposed changes. Importantly, pull requests also allow you to discuss proposed changes with others!
+
+![](resources/images/pull_request_model.jpg)
+
 You can edit and add content directly in the GitHub website if you
-prefer not to learn Git and GitHub (though we highly recommend it, as
-knowing how to use Git/GitHub is a useful skill to integrate into your
-workflow -- not just for OTTR).
+prefer not to learn how to use git and GitHub from your computer. You can learn how to use git and GitHub in a more [advanced sense in this chapter]().
 
 ## Create a new branch
 
-With GitHub in order to keep your OTTR course preserved content and code
-is managed through the use of branches. To explain branches we'll mainly
+On GitHub code is managed through the use of branches. To explain branches we'll mainly
 refer to two branches: your `main` branch:
 
 ![](resources/images/main_branch.png)
@@ -109,7 +115,7 @@ Then write a message about what changes you made and press the
 
 Now you are ready to open your pull request.
 
-# Open a pull request {#open-a-pull-request}
+## Open a pull request {#open-a-pull-request}
 
 After a variable number of commits, your branch, perhaps called
 `a-new-branch` or any other new branch you might have made, is a
@@ -173,117 +179,13 @@ steps.
 
 ![](resources/images/summary.png)
 
-# Checks on the pull requests
-
-With your pull request open, the series of OTTR GitHub actions checks
-will commence! They will print out reports as comments on your pull
-request.
-
-![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/gha-checks.png)
-
-Read those comments to begin addressing the problems with more commits
-to your branch.
-
-You can adjust what checks are run by editing the
-`config_automation.yml` file. This is further discussed in this section
-about [the GitHub
-Actions](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots).
-
-If you need more information on failed GitHub actions you can scroll to
-the bottom of your pull request where the status of the checks are shown
-and click on `Details` for more information. If you are unsure what the
-error message means and have trouble addressing it, please [file an
-issue on the OTTR_Template repository to get
-help](https://github.com/jhudsl/OTTR_Template/issues/new?assignees=cansavvy&labels=bug&template=course-template-problem-report.md).
-
-For more on [what to put in a pull request's description, you can read
-this
-chapter](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-an-author.html).
-
-For more on [how to review a pull request, see this
-chapter](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-a-reviewer.html).
-
-
-<div class = "notice">
-If you encounter situations where a spelling report or URL report doesn't look as expected, you may just need to **refresh the page** or **make another commit** to your pull request.
-</div>
-
-
-![](resources/images/summary_2.png)
-
-# Adding new chapters
-
-Adding new chapters to your OTTR course, requires some specific steps in
-addition to what we've discussed here.
-
-### Step 1) Add a new chapter Rmd file
-
-Follow the instructions for adding a new file, but make sure that you
-name the file something ending in `.Rmd` and add it to your `new branch`
-whatever it is called.
-
--   For `Entry Level` adding a new file [read
-    this](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
--   For `Advanced` adding a new file - you'll create this file locally
-    using RStudio or a text editor and follow the steps to add, commit
-    and push those to your new branch.
-
-### Step 2) Add the name of your new chapter to your \_bookdown.yml file
-
-As you modify the names of the chapters of your course and add more
-chapters (using the `.Rmd` files), you need to update the
-`_bookdown.yml` file accordingly.
-
-For example let's say that we added another chapter and named the file
-`03-new_chapter_of_course.Rmd`. We would update our `_bookdown.yml` to
-look like this:
-
-``` yaml
-book_filename: "Course_Name"  
-chapter_name: "Chapter "  
-repo: https://github.com/jhudsl/OTTR_Template/ ##Make sure you update this for your GitHub Repo!!  
-rmd_files: ["index.Rmd",  
-            "01-intro.Rmd",   
-            "02-chapter_of_course.Rmd",   
-            "03-new_chapter_of_course.Rmd",  ##Only this is new!
-            "about.Rmd"]  
-new_session: yes  
-delete_merged_file: true  
-language:  
-  ui:  
-    chapter_name: "Chapter "  
-output_dir: "docs"  
-```
-
-**Important:** Notice how only one line is different - the one that says
-`03-chapter_of_course.Rmd",` Be careful about quotation marks: `""` as
-well as commas: `,`!
-
-### Step 3) Commit the \_bookdown.yml file changes to the current branch
-
-Follow the steps for how to commit changes and commit the edits to your
-`_bookdown.yml` file to your current branch.
-
-### Step 4) Go to your Pull Request!
-
-Go to your repository and click on the `Pull Request` button in the
-navbar. ALl communication about this pull request should happen here
-
-
 ## More resources for learning GitHub
 
--   [Using version control with
-    GitHub](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
+-   [Using version control with GitHub](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
 -   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
--   [GitHub for data
-    scientists](https://towardsdatascience.com/introduction-to-github-for-data-scientists-2cf8b9b25fba)
--   [Intro to
-    GitHub](https://lab.github.com/githubtraining/introduction-to-github)
--   [First Day on
-    GitHub](https://lab.github.com/githubtraining/first-day-on-github)
--   [First Week on
-    GitHub](https://lab.github.com/githubtraining/first-week-on-github)
--   [GitHub docs about creating a Pull
-    Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
--   [Making a Pull
-    Request](https://www.atlassian.com/git/tutorials/making-a-pull-request)
+-   [GitHub for data scientists](https://towardsdatascience.com/introduction-to-github-for-data-scientists-2cf8b9b25fba)
+-   [Intro to GitHub](https://lab.github.com/githubtraining/introduction-to-github)
+-   [First Day on GitHub](https://lab.github.com/githubtraining/first-day-on-github)
+-   [First Week on GitHub](https://lab.github.com/githubtraining/first-week-on-github)
+-   [GitHub docs about creating a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+-   [Making a Pull Request](https://www.atlassian.com/git/tutorials/making-a-pull-request)
