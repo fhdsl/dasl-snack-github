@@ -10,6 +10,8 @@
 - Know how to make a pull request - [Beginner method](https://hutchdatascience.org/dasl-snack-github) or [Advanced method](https://hutchdatascience.org/dasl-snack-github)
 
 
+:warning: This section is still being developed! 
+
 ## Tips for collaborating through GitHub
 
 1. Err on the side of over communicating!
