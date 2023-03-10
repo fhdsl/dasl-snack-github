@@ -1,0 +1,11 @@
+
+TODO: Fill this in with "good etiquette"
+
+
+1. Err on the side of over communicating!
+2. Don't force push
+3. Don't merge to main without a PR
+4. Make issues. (How to make good ones)
+5. How to ask for help!
+6. You can close your own issues and PRs
+7. Tag relevant people.

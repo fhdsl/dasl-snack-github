@@ -1,0 +1,8 @@
+
+
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "05-code-review-author.Rmd",
+  repo_name = "jhudsl/Adv_Reproducibility_in_Cancer_Informatics"
+)
+```

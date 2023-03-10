@@ -1,0 +1,8 @@
+
+
+First step is to create an account with GitHub.
+
+
+[Go here to do that.](https://github.com/join)
+
+Don't use your full name, but preferably use some sort of abbreviated version of your first or last name so that others can recognize you.
