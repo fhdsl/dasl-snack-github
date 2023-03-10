@@ -1,0 +1,18 @@
+# Conducting code review as an author on GitHub
+
+## Prerequisites
+
+- [Have an understanding of why Github is useful](https://hutchdatascience.org/dasl-snack-github/why-github.html)
+- [Have a GitHub account](https://hutchdatascience.org/dasl-snack-github/create-a-github-account.html)
+- [Create a repository on Github](https://hutchdatascience.org/dasl-snack-github/setting-up-a-project-on-github.html)
+- [Set up a Git Client](https://hutchdatascience.org/dasl-snack-github/setting-up-a-git-client.html)
+- Know how to make a pull request - [Beginner method](https://hutchdatascience.org/dasl-snack-github/making-a-pull-request-beginners.html) or [Advanced method](https://hutchdatascience.org/dasl-snack-github/making-a-pull-request-advanced.html)
+
+
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "05-code-review-author.Rmd",
+  repo_name = "jhudsl/Adv_Reproducibility_in_Cancer_Informatics",
+  remove_h1 = TRUE
+)
+```
