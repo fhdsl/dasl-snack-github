@@ -184,6 +184,15 @@ steps.
 
 ## More resources for learning GitHub
 
+## How to file a pull requests -- variation
+
+<iframe src="https://scribehow.com/embed/Filing_a_pull_request_using_Posit_CloudRStudio__g8-NqenWSry-16kKHu8vQw" width="100%" height="640" allowfullscreen frameborder="0"></iframe>
+
+<iframe src="https://scribehow.com/embed/Filing_a_pull_request_with_GitKraken__oQ-8SzzoRcugPdA0tSEk6A?as=scrollable&skipIntro=true&removeLogo=true" width="100%" height="640" allowfullscreen frameborder="0"></iframe>
+
+<iframe src="https://scribehow.com/embed/Filing_a_pull_request_using_Posit_CloudRStudio__g8-NqenWSry-16kKHu8vQw?as=scrollable&skipIntro=true&removeLogo=true" width="100%" height="640" allowfullscreen frameborder="0"></iframe>
+
+
 -   [Using version control with GitHub](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
 -   [Happy Git and GitHub for the useR](https://happygitwithr.com/)
 -   [GitHub for data scientists](https://towardsdatascience.com/introduction-to-github-for-data-scientists-2cf8b9b25fba)
