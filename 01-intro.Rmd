@@ -20,7 +20,7 @@ Alternatively you can go through this course from start to finish. But note that
 |Your Objective| Which chapter to go to|
 |------------------------------|-----------------------------|
 |Why is git and Github even important or useful?|[Start here](https://hutchdatascience.org/dasl-snack-github/why-github.html) |
-|Creating an account on GitHub| [Start here](https://hutchdatascience.org/dasl-snack-github) |
+|Creating an account on GitHub| [Start here](https://hutchdatascience.org/dasl-snack-github/create-a-github-account.html) |
 |How to start a project on a GitHub repository| [Start here](https://hutchdatascience.org/dasl-snack-github/setting-up-a-project-on-github.html) |
 |Getting added to the Fred Hutch GitHub organization| [Start here](https://hutchdatascience.org/dasl-snack-github/getting-added-to-the-hutch-github-organization.html)|
 |Install a GUI to help you with git on your computer| [Start here](https://hutchdatascience.org/dasl-snack-github/setting-up-a-git-client.html) |
